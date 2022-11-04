@@ -219,8 +219,8 @@
   input[type="reset"].button-primary:focus,
   input[type="button"].button-primary:focus {
     color: #FFF;
-    background-color: #991edb;;
-    border-color: #650fce; }
+    background-color: #650fce;
+    border-color:  #991edb; }
   
   
   /* Forms
@@ -238,6 +238,7 @@
     padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: #fff;
     border: 1px solid #D1D1D1;
+    color:#333;
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box; }
