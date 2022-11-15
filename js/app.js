@@ -4,7 +4,7 @@ const carrito = document.querySelector('#carrito');
 
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 
-const vaciarCarrito = document.querySelector('#vaciar-carrito');
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 
 const listaCursos = document.querySelector('#lista-cursos');
 
@@ -18,6 +18,11 @@ function cargaEventListeners(){
 
     //Elimina cursos del carrito
     carrito.addEventListener('click', eliminarCurso);
+
+    vaciarCarritoBtn.addEventListener('click', () =>{
+        articulosCarrito = [];
+        limpiarHTML();
+    })
 }; 
 
 
@@ -57,8 +62,7 @@ function eliminarCurso(e){
 //Lee el contenido del HTML al que e dimos click y extrae la informacion del curso
 
 function leerDatosCurso(curso){
-    console.log(curso);
-
+    
 
  // Crear un objeto con el curso actual
     const infoCurso = {
@@ -96,7 +100,6 @@ function leerDatosCurso(curso){
 
    
 
-    console.log(articulosCarrito);
 
     carritoHTML();
 }
